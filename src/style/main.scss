@@ -1,0 +1,109 @@
+$title-color: #bfbfbf;
+$description-color: #838383;
+$highlight-color: #2192a2;
+
+html {
+  font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Lato", sans-serif;
+  font-weight: regular;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff3fd;
+
+  /* --------- reset --------- */
+  overflow-x: hidden;
+  font-weight: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+}
+
+/* --------- Info card styles --------- */
+.card-container {
+  width: 471px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1.2fr;
+  gap: 4rem;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.card-column {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.2rem;
+
+  &:last-child {
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+
+    &.card-row {
+      align-items: center;
+    }
+  }
+}
+
+.card-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > h1 {
+    font-size: 1.1rem;
+    color: $title-color;
+  }
+  & > p {
+    font-size: 1.2rem;
+    color: $description-color;
+  }
+  & > img {
+    height: 2rem;
+    margin: .5rem 0;
+  }
+}
+p.text-hl {
+  color: $highlight-color;
+}
+
+p.text-sm {
+  font-size: 0.7rem;
+}
+
+p.text-b {
+  font-weight: bold;
+}
+
+.card-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > h1 {
+    font-size: 1.1rem;
+    color: $title-color;
+  }
+  & > p {
+    font-size: 1.2rem;
+    color: $description-color;
+  }
+}
