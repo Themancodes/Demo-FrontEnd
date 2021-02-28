@@ -57,7 +57,7 @@ const GeneralInfoCard = ({
             <div className="card-column">
                 <div className="card-row" >
                     <h1>Evidencia</h1>
-                    <img src={imageFile} alt="Ícono de Archivo" />
+                    <a href={evidence}><img src={imageFile} alt="Ícono de Archivo" /> </a>
                     <p className="text-hl text-sm">{contractCode}</p>
                 </div>
             </div>

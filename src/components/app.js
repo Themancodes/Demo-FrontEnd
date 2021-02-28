@@ -6,30 +6,40 @@ const App = () => {
 
   const [info, setInfo] = useState()
   
+  async function fetchData() {
+    const data = await fetch('https://be6p23ysj7.execute-api.us-east-1.amazonaws.com/dev/projects/76bde480-70de-484b-4b87-c993642d8130-008c/contracts')
+    const json = await data.json()
+    setInfo({ json })
+
+
+    console.log("Soy json", json)
+    console.log("Soy info", info)
+    }
+    
   useEffect(()=> {
-    async function fetchData() {
-      const data = await fetch('https://be6p23ysj7.execute-api.us-east-1.amazonaws.com/dev/projects/76bde480-70de-484b-4b87-c993642d8130-008c/contracts')
-      const json = await data.json()
-      setInfo(json)
+    fetch('https://be6p23ysj7.execute-api.us-east-1.amazonaws.com/dev/projects/76bde480-70de-484b-4b87-c993642d8130-008c/contracts')
+    .then(response => response.json())
+    .then(json2 => {
+     console.log(json2)
+     setInfo(json2)
+    return json2
+  })
+  .catch(error => console.log("Fetch error", error))
 
-
-      console.log("Soy json", json)
-      console.log("Soy Data", info)
-      }
-    fetchData();
   },[]);
 
   return(
     <div className="app">
+      {console.table("ya", info && info.results)}
         <GeneralInfoCard
-          contractCode = ""
-          specialty = "Madera"
-          startDate = "13/12/2019"
-          contractName = "Habitante OC/AL Maíz Mier"
-          contractor = "LA"
-          endDate = "20/12/2019"
-          duration = "7 Days"
-          evidence = "CO-CO001-20"
+          contractCode = { info && info.results[0].code }
+          specialty = { info && info.results[0].category }
+          startDate = { info && info.results[0].start_date }
+          contractName = { info && info.results[0].name }
+          contractor = { info && info.results[0].contractor }
+          endDate = { info && info.results[0].end_date }
+          duration = { info && (new Date(info.results[0].end_date) - new Date(info.results[0].start_date)) / 86400000 + " days" }
+          evidence = { info && info.results[0].file }
         />
       </div>
     )
