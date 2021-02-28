@@ -1,7 +1,7 @@
 import React from 'react';
-import imageFile from '../images/file-pdf-solid.svg';
+import imageFile from '../../images/file-pdf-solid.svg';
 
-const GeneralInfoCard = ({
+const GeneralInfoCardLayout = ({
     contractCode,
     specialty,
     startDate,
@@ -65,4 +65,4 @@ const GeneralInfoCard = ({
     )
 }
 
-export default GeneralInfoCard
+export default GeneralInfoCardLayout
