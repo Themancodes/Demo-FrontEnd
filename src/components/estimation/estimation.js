@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import BalanceLayout from './balanceLayout'
+import EstimationLayout from './EstimationLayout'
 
-const Balance = () => {
+const Estimation = () => {
   const [info, setInfo] = useState()
 
   useEffect(()=> {
@@ -16,14 +16,19 @@ const Balance = () => {
   },[]);
 
   return(
-    <BalanceLayout 
+    <EstimationLayout 
+      
       total = { info && info.results[0].total_amount }
       vat = { info && info.results[0].vat }
       guarantee_fund = { info && info.results[0].guarantee_fund }
       down_payment = { info && info.results[0].down_payment }
+      total = { info && info.results[0].total_amount }
+      total = { info && info.results[0].total_amount }
+      total = { info && info.results[0].total_amount }
+
     />
     
   )
 }
 
-export default Balance
+export default Estimation
