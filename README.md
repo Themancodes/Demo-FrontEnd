@@ -5,7 +5,7 @@
 ![capture-20210301104245.png](https://i.postimg.cc/QdfHRcjw/capture-20210301104245.png)
 
 ## To make it work:
-- Pull the repository
+- Clone the repository
 - yarn install
 - npm start
 
