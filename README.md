@@ -4,6 +4,11 @@
 > 
 ![capture-20210301104245.png](https://i.postimg.cc/QdfHRcjw/capture-20210301104245.png)
 
+## To make it work:
+Pull the repository
+yarn install
+npm start
+
 ## What's Working
 - Info from API get's render correctly
 - Clean Layouts and styles 
