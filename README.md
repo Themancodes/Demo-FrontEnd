@@ -1,6 +1,6 @@
 # Demo Project
 
-> For: Private uses only
+> ⛔ For: Private uses only
 > 
 ![capture-20210301104245.png](https://i.postimg.cc/QdfHRcjw/capture-20210301104245.png)
 
@@ -13,4 +13,4 @@
 - Get the table to work correctly (staticly at first)
 - Fill the table from the API
 - Process data to be rendered on screen
-- Drink more coffee
+- Drink more coffee ☕
