@@ -581,25 +581,29 @@ th, td {
     position: sticky;
     z-index: 20;
     left: 0px;
-    width: 300px !important;
+    min-width: 30px;
     // background-color: slateblue;
   }
   &:nth-child(2) {
-    left: 26px;
+    left: 30px;
     position: sticky;
     z-index: 20;
+    min-width: 99px;
     // background-color: skyblue;
   }
   &:nth-child(3) {
     position: sticky;
     z-index: 20;
-    left: 115px;
+    left: 129px;
+    min-width: 99px;
+
     // background-color: sienna;
   }
   &:nth-child(4) {
     position: sticky;
     z-index: 20;
-    left: 169px;
+    left: 228px;
+    min-width: 99px;
     // background-color: sandybrown;
   }
 }
@@ -609,6 +613,12 @@ td {
   background-color: white;
   }
 }
+
+
+// --------------------------------------------
+//                 scrollbar
+// --------------------------------------------
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
