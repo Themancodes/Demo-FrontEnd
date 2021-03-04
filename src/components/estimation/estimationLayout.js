@@ -2,11 +2,24 @@ import React from 'react';
 
 
 // const estimationLayout = ({ total, vat, guarantee_fund, down_payment }) => {
-const EstimationLayout = () => {
+const EstimationLayout = ({ consolelog, reviewDate, name, reviewed_by, estimate, down_payment }) => {
 
 
-  // function CurrencyFormat (int) {
-  //   return new Intl.NumberFormat("es-MX", {style: "currency", currency: "MXN"}).format( int )
+  function CurrencyFormat (int) {
+    return new Intl.NumberFormat("es-MX", {style: "currency", currency: "MXN"}).format( int )
+  }
+
+  // ------------------------------------------------------
+  //                  TEMPLATE
+  // ------------------------------------------------------
+  // temp1.map( (item) => { return (item.estimate)*(item.charge_off) })
+  //
+  // for ( let index = 0; index < temp1.length; index++  ) {
+  //  console.log(temp1[index].estimate) ]
+  //
+
+  // function PopulateTable() => {
+  //   return void
   // }
 
   return (
@@ -40,7 +53,7 @@ const EstimationLayout = () => {
         </div>
         <div className="summary-contents">
           <div className="summary-col">
-            <p>$1,000,000.00</p>
+            <p>ssss</p>
           </div>
           <div className="summary-col">
             <p>$1,000,000.00</p>
@@ -56,27 +69,6 @@ const EstimationLayout = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <div className="sticky-div">
         <table className="sticky-table">
@@ -98,7 +90,7 @@ const EstimationLayout = () => {
 
           <tbody>
             <tr>
-              <td>01</td>
+              <td>{ console.log("im your truth", consolelog ) }</td>
               <td>Sad</td>
               <td>Sad</td>
               <td>Happy</td>
@@ -109,6 +101,151 @@ const EstimationLayout = () => {
               <td>Happy</td>
               <td>Happy</td>
             </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            
             
             <tr className="row-totals">
               <td><div className="border-top"></div></td>
@@ -124,197 +261,7 @@ const EstimationLayout = () => {
             </tr>
           </tbody>
         </table>
-        {/* <div class="papa">
-          <div class="izquierda">
-            <div class="header-izq">ierda-PALABRA LARGA
-              <div>#</div>
-              <div>HEADERS</div>
-              <div>HEADERS</div>
-              <div>HEADERS</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda-PALABRA LARGAierda-PALABRA LARGA</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-            <div class="row-izq">
-              <div>n</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-              <div>ROW-Izquierda</div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="derecha">
-            <div class="header-der">
-              <div>HEADER-DER</div>
-              <div>HEADER-DER</div>
-              <div>HEADER-DER</div>
-              <div>HEADER-DER</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>         
-              </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA-PALABRA LARGA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div>
-            <div class="row-der">
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-              <div>ROW-DERECHA</div>
-            </div> */}
+        
 
       </div>
     </div>

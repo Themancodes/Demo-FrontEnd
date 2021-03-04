@@ -562,10 +562,9 @@ thead {
   tr {
     // box-shadow: 0px 3px 6px #00000029;
   }
-
+  
   th {
     position: -webkit-sticky; // for safari
-    position: sticky;
     top: 22px;
     left: 0;
     height: 29px;
@@ -597,13 +596,13 @@ thead {
 }
 
 // ---------------------------------------------
-//              Dirty Fixes
+//              Clever Fixes
 // ---------------------------------------------
 
 .coverup {
   background-color: white;
   position: absolute;
-  width: 326px;
+  width: 328px;
   top: -22px;
   height: 22px;
   z-index: 4 !important;
@@ -652,6 +651,10 @@ thead {
 // ----------------------------------
 //          Middle Section
 // ----------------------------------
+
+th {
+  position: sticky;
+}
 
 th, td {
   padding: 5px 5px;
@@ -716,8 +719,6 @@ tr {
   white-space: nowrap;
 
   &:first-child {
-    position: -webkit-sticky; // for safari
-    position: sticky;
     z-index: 20;
     left: 0px;
     min-width: 30px;
@@ -770,7 +771,7 @@ td {
 .row-totals {
   
   & > td {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     max-height: 29px;
     &:nth-child(4) {

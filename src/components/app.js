@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import GeneralInfoCard from './generalinfocard/generalInfoCard'
 import Balance from './balance/balance'
-import EstimationLayout from './estimation/estimationLayout'
+import Estimation from './estimation/estimation'
 import staticsidebar from '../images/static.png';
 
 
@@ -18,7 +18,7 @@ const App = () => {
       </div>
       <GeneralInfoCard />
       <Balance />
-      <EstimationLayout />
+      <Estimation />
     </div>
   )
 }
