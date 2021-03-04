@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // const estimationLayout = ({ total, vat, guarantee_fund, down_payment }) => {
 const EstimationLayout = () => {
 
@@ -9,7 +10,7 @@ const EstimationLayout = () => {
   // }
 
   return (
-    <div className="estimation-container">
+    <div className="estimation-container div5">
       <div className="estimation-row">
         <div className="progress-card">
           <h1>PROGRESO A FECHA</h1>
@@ -77,18 +78,19 @@ const EstimationLayout = () => {
 
 
 
-      <div className="sticky-table">
+      <div className="sticky-div">
         <table className="sticky-table">
           <thead>
             <tr>
-              <th>01</th>
+              <th>#<div className="coverup"></div><div className="bottom-shadow"></div></th>
               <th>Fecha aprobación</th>
               <th>Concepto</th>
-              <th>Aprobado por</th>
-              <th>Estimación</th>
-              <th>Anticipo</th>
+              <th>Aprobado por <div className="vertical-shadow"></div></th>
+              <th>Estimación<div className="coverup3"></div></th>
+              <th>Anticipo<div className="banner"><h4>DEDUCCIONES</h4></div>
+              </th>
               <th>Fondo Garantía</th>
-              <th>Subtotal</th>
+              <th>Subtotal<div className="coverup2"></div></th>
               <th>IVA</th>
               <th>Total</th>
             </tr>
@@ -107,95 +109,12 @@ const EstimationLayout = () => {
               <td>Happy</td>
               <td>Happy</td>
             </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Sad</td>
-              <td>Sad</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-              <td>Happy</td>
-            </tr>
+            
             <tr className="row-totals">
+              <td><div className="border-top"></div></td>
               <td></td>
               <td></td>
-              <td></td>
-              <td></td>
+              <td>Total</td>
               <td>Happy</td>
               <td>Happy</td>
               <td>Happy</td>

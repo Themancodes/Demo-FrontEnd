@@ -7,7 +7,7 @@ const BalanceLayout = ({ total, vat, guarantee_fund, down_payment }) => {
   }
 
   return (
-      <div className="balance-container" >
+      <div className="balance-container div4" >
           <div className="balance-row">
               <h1>Total (MXN)</h1>
               <p>{ CurrencyFormat( total ) }</p>
