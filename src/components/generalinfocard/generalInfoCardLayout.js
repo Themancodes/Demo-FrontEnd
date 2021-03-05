@@ -13,7 +13,7 @@ const GeneralInfoCardLayout = ({
 }) => {
 
     return (
-        <div className="card-container" >
+        <div className="card-container div3" >
             <div className="card-column">
                 <div className="card-row">
                     <h1>Código contrato</h1>
