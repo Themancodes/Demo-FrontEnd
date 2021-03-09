@@ -14,6 +14,7 @@ module.exports = webpackMerge(webpackCommon, {
 
   devtool: 'inline-source-map',
   mode: 'development',
+
   output: {
   
     path: path.resolve(__dirname, '../static/dist'),
@@ -22,7 +23,7 @@ module.exports = webpackMerge(webpackCommon, {
 
     sourceMapFilename: '[name].map',
 
-    chunkFilename: '[id]-chunk.js',
+    chunkFilename: '[id].[chunkhash].js',
 
     publicPath: '/'
 
